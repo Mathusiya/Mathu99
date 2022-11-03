@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>HTML Forms</h2>
+
+    <form action="/action_page.php" target="_blank" method="post" autocomplete="on" novalidate>
+        <fieldset>
+            <legend>Personalia:</legend>
+        
+        <label for="fname"> First Name: </label><br>
+        <input type="text" id="fname" name="fname" value="mathu" readonly><br>
+        <label for="lname"> Last Name: <br></label>
+        <input type="text" id="lname" name="lname" value="shiya"><br><br>
+        <input type="submit" value="Submit">
+    </fieldset>
+    </form>
+
+    <br><br><br>
+
+    <p>Choose your favorite</p>
+    <form>
+        <input type="radio" id="html" name="fave_language" value="HTML" disabled>
+        <label for="html">HTML</label><br>
+
+        <input type="radio" id="css" name="fave_language" value="CSS">
+        <label for="css">CSS</label><br>
+
+        <input type="radio" id="js" name="fave_language" value="JS">
+        <label for="js">Javascript</label><br>
+
+        <input type="checkbox" id="vehicle" name="vehicle" value="Bike">
+        <label for="vehicle">Bike</label><br>
+
+        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+        <label for="vehicle3">Car</label><br>
+    </form>
+
+    <br><br><br>
+
+    <form action="/action_page.php">
+
+        <textarea name="message" style="width: 200px; height:600px;">That cat was</textarea>
+        <br><br><hr>
+        <label for="cars">Choose a car:</label>
+        <select id="cars" name="cars">
+            <option value="volvo"> Volvo</option>
+            <option value="saab"> Saab</option>
+            <option value="Fiat">Fiat</option>
+            
+        </select>
+        <input type="submit">
+
+    </form>
+
+    <br><br><br>
+
+    <form action="/action_page.php">
+        
+
+        <textarea name="message" rows="12" cols="20"> Type your self</textarea>
+
+        <br><br><br>
+        <label for="cars">Choose a car:</label>
+        <select id="cars" name="cars" size="2" multiple>
+            <option value="volvo"> Volvo</option>
+            <option value="saab"> Saab</option>
+            <option value="Fiat">Fiat</option>
+            
+        </select>
+        <input type="submit">
+    </form>
+
+    <br><br><hr>
+
+    <form action="/action_page.php">
+        <input list="browsers" name="browser">
+        <datalist id="browsers">
+            <option value="Internet explorer">
+            <option value="Chrome">
+            <option value="Opera">
+        </datalist>
+        <input type="submit">
+    </form>
+
+<br><br><br><hr>
+    <form action="/action_page.php" oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+        0
+        <input type="range" id="a" name="a" value="50">
+        100 +
+        <input type="number" id="b" name="b" value="50">
+        =
+        <output name="x" for="a b"></output>
+        <br><br>
+        <input type="submit">
+
+    </form>
+
+    <br>
+
+    <form action="/action_page.php">
+        <label for="favcolor">Select your favorite color:</label>
+        <input type="color" id="favcolor" name="favcolor" value="#ff0000">
+        <input type="submit" value="Submit">
+      </form>
+      
+<br>
+    <button type="button" onclick="alert('Hello world' )">Click Me!</button>
+
+    <br><br><hr>
+
+    <canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;"> Your browser</canvas>
+</body>
+</html>
